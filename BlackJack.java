@@ -3,6 +3,8 @@ public class BlackJack{
 
     public BlackJack(){
         startGame();
+
+        Window mainwindow = new Window();
     }
 
     public void startGame(){

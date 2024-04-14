@@ -12,7 +12,7 @@ public class Window {
     int cardWidth = 110;
     int cardHeight = 154;
 
-    JPanel mainGamePanel = new JPanel(){
+    JPanel gamePanel = new JPanel(){
         @Override
         public void paintComponent(Graphics g){
             super.paintComponent(g);
@@ -37,6 +37,8 @@ public class Window {
     public Window(){
         initalizeWindow();
         initalizePanels();
+
+        
     }
 
     private void initalizeWindow(){
@@ -50,9 +52,9 @@ public class Window {
     }
 
     private void initalizePanels(){
-        mainGamePanel.setLayout(new BorderLayout());
-        mainGamePanel.setBackground(backgroundColor); 
-        frame.add(mainGamePanel);
+        gamePanel.setLayout(new BorderLayout());
+        gamePanel.setBackground(backgroundColor); 
+        frame.add(gamePanel);
 
         //Gets rid of ugly text highlight
         hitButton.setFocusable(false);
